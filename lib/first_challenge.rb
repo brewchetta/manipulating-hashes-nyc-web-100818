@@ -13,8 +13,8 @@ def first_challenge
     }
   }
 
-  #your code here
-
+  contacts.each do |k,v|
+    
 
 
   contacts
