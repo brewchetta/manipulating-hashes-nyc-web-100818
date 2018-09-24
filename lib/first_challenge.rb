@@ -13,8 +13,13 @@ def first_challenge
     }
   }
 
-  contacts.each do |k,v|
-    
+  contacts.each do |name,data|
+    name.each do |k,v|
+      v.each do |x|
+        x.delete if x == "strawberry"
+      end
+    end
+  end 
 
 
   contacts
