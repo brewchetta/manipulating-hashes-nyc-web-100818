@@ -15,11 +15,13 @@ def first_challenge
 
   contacts.each do |name,data|
     data.each do |k,v|
-      v.each do |x|
-        x.delete if x == "strawberry"
+      if v.class == array do
+        v.each do |x|
+          x.delete if x == "strawberry"
+        end
       end
     end
-  end 
+  end
 
 
   contacts
