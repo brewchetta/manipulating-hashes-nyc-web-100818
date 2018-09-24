@@ -17,9 +17,7 @@ def first_challenge
     data.each do |k,v|
       if v.class == Array
         v.each do |x|
-          if x == "strawberry"
-            x.delete
-          end
+          x.delete_if {|x| x == "strawberry"}
         end
       end
     end
