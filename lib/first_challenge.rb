@@ -15,7 +15,7 @@ def first_challenge
 
   contacts.each do |name,data|
     data.each do |k,v|
-      if v.class == array do
+      if v.include? {|x| x == strawberry }
         v.each do |x|
           x.delete if x == "strawberry"
         end
